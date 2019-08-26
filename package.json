@@ -15,5 +15,10 @@
     "It"
   ],
   "author": "Corey",
-  "license": "ISC"
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.17.1",
+    "mysql": "^2.17.1",
+    "sequelize": "^5.16.0"
+  }
 }
