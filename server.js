@@ -1,5 +1,5 @@
 var express = require("express");
-var db = require("./models");
+var db = require("./app/models");
 var app = express();
 
 app.use(express.static("public"));
@@ -11,9 +11,12 @@ var exphbs = require("express-handlebars");
 app.engine("handlebars", exphbs({
     defaultLayout: "main"
 }));
+app.engine("handlebars", exphbs({
+    defaultLayout: "main"
+}));
 app.set("view engine", "handlebars");
 
-var routes = require("./controllers");
+var routes = require("./app/controllers/burgers_controllers");
 
 app.use(routes);
 

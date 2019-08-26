@@ -6,12 +6,12 @@
 		</div>
 		<div class="col-sm-6 text-center" class="task">
 			<div class="row">
-			  {{#each burger}}
-			  	{{#unless this.devoured}}
+				{{#each burger}}
+				{{#unless this.devoured}}
 				<div class="col-sm-9 text-center">
 					<pre>{{this.id}}. {{this.burger_name}}
 					</pre>
-				  		<!-- {{this.Date}} -->
+					<!-- {{this.Date}} -->
 				</div>
 				<div class="col-sm-3 text-center">
 					<form class="button-size devour-form">
@@ -20,15 +20,15 @@
 					</form>
 				</div>
 				{{/unless}}
-			  {{/each}}
+				{{/each}}
 			</div>
 		</div>
 		<div class="col-sm-6 text-center" class="task">
-			  {{#each burger}}
-			  	{{#if this.devoured}}
-			  		<input class="form-control" type="text" placeholder="{{this.id}} . {{this.burger_name}}">
-				{{/if}}
-			  {{/each}}
+			{{#each burger}}
+			{{#if this.devoured}}
+			<input class="form-control" type="text" placeholder="{{this.id}} . {{this.burger_name}}">
+			{{/if}}
+			{{/each}}
 		</div>
 	</div>
 </div>
